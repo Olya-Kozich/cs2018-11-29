@@ -11,6 +11,6 @@ class TaskA3 {
         int j = 3;
         int k = i + j;
         System.out.println(i + "+" + j + "=" + k);
-        System.out.println(j + "+" + j + i+2 + i^2 "=" 25);
+        System.out.println(j + "+" + j + i+2 + i^2 "="25);
     }
 }
