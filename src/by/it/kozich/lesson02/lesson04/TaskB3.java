@@ -25,7 +25,22 @@ package by.it.kozich.lesson02.lesson04;
  */
 
 
+import java.util.Scanner;
 
 public class TaskB3 {
 
+    public static void main(String[] args) {
+        System.out.println("введите число ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        int i = 1;
+        int sum = 1;
+        while (number>=sum) {
+            System.out.print(sum + ",");
+            i = i + 1;
+            sum = sum + i;
+
+        }
+
+    }
 }
