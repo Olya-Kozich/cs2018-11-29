@@ -30,5 +30,21 @@ package by.it.kozich.lesson02;
 
 */
 class TaskC3 {
+    static String getText (int i) {
+        switch ();
+        int d=i/10;
+        int e=1%10;
+    String end=e==0?"":" "+getText(e)
+            switch (d){
+                case 1: return "двадцать"+end
+    }
+
+    public static void main(String[] args) {
+        for (int i=2; i<=10; i++){
+            for (int j=2; j<=10;j++)
+        }
+            System.out.println(getText (i));
+        }
+    }
 
 }
