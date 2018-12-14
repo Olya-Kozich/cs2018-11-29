@@ -19,6 +19,46 @@ Index of last element=1
 
 */
 
-public class TaskB3 {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
-}
+public class TaskB3 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Заполнение массива случайными числами");
+        int mas[] = new int[10];
+        for (int i = 0; i < mas.length; i++) {
+            mas[i] =  (int)(Math.random() * 100);
+            System.out.print(mas[i] + "  ");
+        }
+
+        int unsorted[] = mas.clone();
+        Arrays.sort(mas);
+        System.out.println("\n Отсортированный массив");
+
+        for (int i = 0; i < mas.length; i++){
+            System.out.print(mas[i] + "  ");
+        }
+
+        System.out.println("\n индексы");
+
+        int ind2 = -2;
+        int ind1 = -2;
+
+        for(int i = 0; i < unsorted.length; i++){
+            if(unsorted[i]==mas[0]){
+                ind1 = i;
+            }
+            if(unsorted[i]==mas[mas.length-1]){
+                ind2 = i;
+            }
+        }
+
+        System.out.println("Index of first element=" + ind1);
+        System.out.println("Index of last element=" + ind2);
+    }
+
+
+        }

@@ -1,5 +1,7 @@
 package by.it.kozich.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,21 +32,18 @@ package by.it.kozich.lesson02;
 
 */
 class TaskC3 {
-    static String getText (int i) {
-        switch ();
-        int d=i/10;
-        int e=1%10;
-    String end=e==0?"":" "+getText(e)
-            switch (d){
-                case 1: return "двадцать"+end
+
+    public static double getWeight (int weight){
+
+        double coef = 3.86 / 9.81;
+        return weight * coef;
     }
 
     public static void main(String[] args) {
-        for (int i=2; i<=10; i++){
-            for (int j=2; j<=10;j++)
-        }
-            System.out.println(getText (i));
-        }
-    }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите вес в килограммах:");
+        int i = scanner.nextInt();
+        System.out.printf("Value: %.2f", getWeight(i));
 
+    }
 }

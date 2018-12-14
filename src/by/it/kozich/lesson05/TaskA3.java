@@ -17,21 +17,21 @@ import java.util.Scanner;
 
 public class TaskA3 {
 
-    
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int [] array = new int [10];
+        int[] array = new int[10];
         for (int i = array.length - 1; i >= 0; i--) {
             array[i] = scanner.nextInt();
         }
-        int min=Integer.MAX_VALUE;
-        int max=Integer.MIN_VALUE;
+        int min = array[0];
+        int max = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i]<min)
-                min=array[i];
-            if (array [i]>max)
-                max=array[1];
-    }
+            if (array[i] < min)
+                min = array[i];
+            if (array[i] > max)
+                max = array[1];
+        }
 
+    }
 }

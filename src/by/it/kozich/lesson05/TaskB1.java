@@ -10,6 +10,25 @@ package by.it.kozich.lesson05;
 */
 
 
+import java.util.ArrayList;
+
 public class TaskB1 {
 
-}
+            public static void main(String[] args) throws Exception
+        {
+            ArrayList<String> list = new ArrayList<String>();
+
+            list.add("простой лист");
+            list.add("перистосложный лист");
+            list.add("пальчатосложный лист");
+            list.add("побег");
+            list.add("стебель");
+
+            System.out.println(list.size());
+
+            for(int i = 0; i < 5; i++){
+                System.out.println(list.get(i));
+            }
+
+        }
+    }
