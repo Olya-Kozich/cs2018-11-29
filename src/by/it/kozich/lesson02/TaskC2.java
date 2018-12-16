@@ -26,25 +26,27 @@ class TaskC2 {
 
         int var_sum = number1 + number2;
 
-        System.out.println("DEC: " + number1 + "+" + number2 + "=" + (number1 + number2));
+        System.out.println("DEC:" + number1 + "+" + number2 + "=" + (number1 + number2));
 
         // Двоичная форма
         String a = Integer.toBinaryString(number1);
         String b = Integer.toBinaryString(number2);
         //System.out.println("BIN: " + Integer.toBinaryString(a) + "+" + Integer.toBinaryString(b) + "=" + Integer.toBinaryString(a + b));
-        System.out.println("BIN: " + a + "+" + b + "=" + Integer.toBinaryString(var_sum));
-
-        // Восьмиричная форма
-        String c = Integer.toOctalString(number1);
-        String d = Integer.toOctalString(number2);
-        //System.out.println("OCT: " + Integer.toOctalString(c) + "+" + Integer.toOctalString(d) + "=" + Integer.toOctalString(c + d));
-        System.out.println("OCT: " + c + "+" + d + "=" + Integer.toOctalString(var_sum));
+        System.out.println("BIN:" + a + "+" + b + "=" + Integer.toBinaryString(var_sum));
 
         // Шеснадцатиричная форма
         String e = Integer.toHexString(number1);
         String f = Integer.toHexString(number2);
         //System.out.println("HEX: " + Integer.toHexString(e) + "+" + Integer.toHexString(f) + "=" + Integer.toHexString(e + f));
-        System.out.println("HEX: " + e + "+" + f + "=" + Integer.toHexString(var_sum));
+        System.out.println("HEX:" + e + "+" + f + "=" + Integer.toHexString(var_sum));
+
+        // Восьмиричная форма
+        String c = Integer.toOctalString(number1);
+        String d = Integer.toOctalString(number2);
+        //System.out.println("OCT: " + Integer.toOctalString(c) + "+" + Integer.toOctalString(d) + "=" + Integer.toOctalString(c + d));
+        System.out.println("OCT:" + c + "+" + d + "=" + Integer.toOctalString(var_sum));
+
+
 
     }
 

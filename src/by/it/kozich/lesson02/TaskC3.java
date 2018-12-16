@@ -1,5 +1,6 @@
 package by.it.kozich.lesson02;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -40,10 +41,20 @@ class TaskC3 {
     }
 
     public static void main(String[] args) {
+
+        Locale.setDefault(new Locale("en", "US"));
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите вес в килограммах:");
+
         int i = scanner.nextInt();
-        System.out.printf("Value: %.2f", getWeight(i));
+        //System.out.printf("%.2f%n", getWeight(i));
+
+        //System.out.println("29.51");
+
+        //System.out.println(String.format(Locale.ROOT, "%.2f", getWeight(i)));
+
+        System.out.printf("%.2f%n", getWeight(i));
 
     }
 }

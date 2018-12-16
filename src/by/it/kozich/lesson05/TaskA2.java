@@ -30,9 +30,13 @@ public class TaskA2 {
         ArrayList list = new ArrayList();
         while (true) {
             String word = scanner.next();
-            if (word.equals("END"))
+            if (word.equals("END")) {
                 break;
+            }
+            list.add(word);
         }
+
+        System.out.println(list);
 
     }
 }

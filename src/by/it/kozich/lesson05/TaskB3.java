@@ -19,18 +19,24 @@ Index of last element=1
 
 */
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
 public class TaskB3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Заполнение массива случайными числами");
+        System.out.println("Заполнение массива числами");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int mas[] = new int[10];
         for (int i = 0; i < mas.length; i++) {
-            mas[i] =  (int)(Math.random() * 100);
+            //mas[i] =  (int)(Math.random() * 100);
+            String string = reader.readLine();
+            mas[i] = Integer.parseInt(string);
             System.out.print(mas[i] + "  ");
         }
 
@@ -49,10 +55,10 @@ public class TaskB3 {
 
         for(int i = 0; i < unsorted.length; i++){
             if(unsorted[i]==mas[0]){
-                ind1 = i;
+                ind1 = i+1;
             }
             if(unsorted[i]==mas[mas.length-1]){
-                ind2 = i;
+                ind2 = i+1;
             }
         }
 

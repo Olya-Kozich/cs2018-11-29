@@ -30,8 +30,10 @@ public class TaskA3 {
             if (array[i] < min)
                 min = array[i];
             if (array[i] > max)
-                max = array[1];
+                max = array[i];
         }
+
+        System.out.println(min + " " + max);
 
     }
 }

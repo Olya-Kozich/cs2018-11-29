@@ -26,8 +26,8 @@ class TaskA2 {
         String b = "О всех усталых в чужом краю,";
         String c = "О всех кораблях, ушедших в море,";
         String d = "О всех, забывших радость свою.";
-        System.out.println("Мое любимое стихотоврение:");
-        System.out.println(a + "/n" + b + "/n" + c + "/n" + d);
+        System.out.println("Мое любимое стихотворение:");
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + d);
     }
 
 }

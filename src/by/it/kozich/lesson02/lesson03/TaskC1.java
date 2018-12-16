@@ -26,7 +26,7 @@ TC = (TF – 32) * 5/9
 
 import java.util.Scanner;
 
-class TemperatureConverter {
+class TaskC1 {
 
     private static double convertCelsiumToFahrenheit(int TC) {
         double res = 9.0 / 5.0 * TC + 32;

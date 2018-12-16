@@ -19,8 +19,12 @@ class TaskC1 {
             System.out.println("Введите два целых числа через пробел:");
             int number1 = scanner.nextInt();
             int number2 = scanner.nextInt();
+            int sum = number1+number2;
 
-            System.out.println("Sum: " + number1+ "+" +number2+ "=" +(number1+number2));
+            System.out.println("Sum = " + sum);
 
-                    }
+            //System.out.println("Sum: " + number1+ "+" +number2+ "=" +(number1+number2));
+
+
+ }
     }

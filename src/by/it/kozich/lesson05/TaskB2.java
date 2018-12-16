@@ -34,19 +34,19 @@ public class TaskB2 {
         int [] a = new int [10];
         int [] b = new int [10];
 
-        System.out.println("Введите целые числа через пробел:");
+        //System.out.println("Введите целые числа через пробел:");
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        for (int i = 0; i < 20; i++){
+        for (int i = 0; i < 19; i++){
             String string = reader.readLine();
             m [i] = Integer.parseInt(string);
         }
 
-        a = Arrays.copyOfRange(m, 0, 9);
+        a = Arrays.copyOfRange(m, 0, 10);
         b = Arrays.copyOfRange(m, 10, 20);
 
-        System.out.println("a= " + Arrays.toString(a));
-        System.out.println("b= " + Arrays.toString(b));
+        System.out.println("a=" + Arrays.toString(a));
+        System.out.println("b=" + Arrays.toString(b));
         }
     }
